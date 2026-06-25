@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louis Engineering Portal · v1.0</title>
+  <meta name="description" content="Louis Engineering 應用程式單一入口 — Today's Focus、Applications、AI Status、Notification Center 與 Quick Links。" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <!-- ================= Homepage ================= -->
+    <header class="commandbar glass">
+      <div class="cb-left">
+        <div class="brand-mark">🐠</div>
+        <div>
+          <p class="eyebrow">Louis Engineering Portal</p>
+          <h1 class="welcome">Welcome, Louis</h1>
+        </div>
+      </div>
+      <div class="cb-right">
+        <span class="live-dot">Online</span>
+        <div class="clock">
+          <div class="time" id="clockTime">--:--:--</div>
+          <div class="date" id="clockDate">—</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ Section 1 — Today's Focus ============ -->
+    <section aria-labelledby="focus-h">
+      <div class="section-head">
+        <span class="tag">01</span>
+        <h2 id="focus-h">Today's Focus</h2>
+        <span class="count">mock data</span>
+      </div>
+      <div class="focus-panel glass">
+        <div class="focus-lead">
+          <span class="label">Focus</span>
+          <span class="headline" id="focusHeadline">—</span>
+          <span class="sub" id="focusSub">—</span>
+        </div>
+        <div class="focus-list" id="focusList"></div>
+      </div>
+    </section>
+
+    <!-- ============ Section 2 — Applications ============ -->
+    <section aria-labelledby="apps-h">
+      <div class="apps-head">
+        <span class="tag">02</span>
+        <h2 id="apps-h">Applications</h2>
+        <span class="count" id="appsCount"></span>
+      </div>
+      <div class="apps-grid" id="appsGrid"></div>
+    </section>
+
+    <!-- ============ Section 3 — AI Status ============ -->
+    <section aria-labelledby="ai-h">
+      <div class="section-head">
+        <span class="tag">03</span>
+        <h2 id="ai-h">AI Status</h2>
+        <span class="count">4 agents</span>
+      </div>
+      <div class="ai-grid" id="aiGrid"></div>
+    </section>
+
+    <!-- ====== Section 4 + 5 — Notifications + Quick Links ====== -->
+    <section class="band" aria-label="Notification Center and Quick Links">
+      <div>
+        <div class="section-head">
+          <span class="tag">04</span>
+          <h2>Notification Center</h2>
+          <span class="count">mock data</span>
+        </div>
+        <div class="notif-panel glass">
+          <div class="notif-list" id="notifList"></div>
+        </div>
+      </div>
+      <div>
+        <div class="section-head">
+          <span class="tag">05</span>
+          <h2>Quick Links</h2>
+        </div>
+        <div class="links-panel glass">
+          <div class="links-list" id="linksList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="foot">
+      <span>Louis Engineering · Portal</span>
+      <span class="badge">PORTAL v1.0</span>
+      <span>Standalone · No backend · Mock data</span>
+    </footer>
+
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
